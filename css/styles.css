@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.productos, .carrito {
+  width: 45%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.productos h2, .carrito h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.productos > div, .carrito > div {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.producto {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.producto h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.producto p {
+  margin: 5px 0;
+  color: #777;
+}
+
+#tablaCarrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tablaCarrito th, #tablaCarrito td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tablaCarrito th {
+  background-color: #f2f2f2;
+}
+
+#tablaCarrito tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#tablaCarrito tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+#tablaCarrito tfoot {
+  font-weight: bold;
+}
+
+#total {
+  font-size: 1.2em;
+}
+
+.carrito button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
